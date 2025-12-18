@@ -1,16 +1,123 @@
-body{
-    background-color: bisque;
-    color: rgb(141, 103, 52);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    padding: 0;
+
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #1c1c1c, #000);
+    color: #f5f1ec;
+    font-family: 'Inter', sans-serif;
+    padding: 40px;
 }
 
-h1{
-    color: rgb(99, 19, 16);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.bar {
+    background: #f5f1ec;
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
     align-items: center;
-    font-size: 50px;
-    margin: 100px;
+    gap: 12px;
+    max-width: 900px;
+}
+
+.bar .logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: #000;
+    margin-right: 10px;
+}
+
+.botoes {
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: #ddd7cf;
+    color: #000;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.botoes:hover {
+    background: #cfc7bd;
+}
+
+.content {
+    margin-top: 80px;
+}
+
+.intro {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.nome {
+    font-family: 'Playfair Display', serif;
+    font-size: 96px;
+    font-style: italic;
+    line-height: 1.1;
+    color: rgb(99, 19, 16);
+    margin-left: 400px;
+}
+
+.sobre {
+    margin-top: 60px;
+    max-width: 400px;
+}
+
+.sobre h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.sobre p {
+    font-size: 14px;
+    color: #cfcac4;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.imagem-circular {
+  width: 350px; /* Tamanho do círculo */
+  height: 350px;
+  border-radius: 50%; /* Torna circular */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.774);
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); /* Sombra do card */
+  cursor: pointer;
+  transition: all 0.4s ease; /* Transição suave */
+  position: relative;
+  margin-right: 100px;
+}
+
+.imagem-circular img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  transition: transform 0.6s ease;
+  border-radius: 50%; 
+}
+
+.imagem-circular:hover {
+  transform: scale(1.01); 
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6); 
+  border-color: rgba(209, 153, 255, 0.6); 
+}
+
+.imagem-circular:hover img {
+  transform: scale(1.2); 
 }
