@@ -6,10 +6,10 @@
 }
 body {
     min-height: 100vh;
-    background: #800000;
+    background: linear-gradient(#800000, #8B0000);
     color: #f5f1ec;
     font-family: 'Inter', sans-serif;
-    padding: 39px;
+    padding: 40px;
 }
 
 .bar {
